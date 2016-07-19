@@ -1,0 +1,114 @@
+/*pierwszy komentarz css*/
+@font-face {
+  font-family: 'ralewayblack';
+  src: url(".fonts/raleway-black.woff2") format("woff2"), url(".fonts/raleway-black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ralewayblack_italic';
+  src: url("fonts/raleway-blackitalic.woff2") format("woff2"), url("fonts/raleway-blackitalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ralewaybold';
+  src: url("fonts/raleway-bold.woff2") format("woff2"), url("fonts/raleway-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  color: #fff;
+  background-color: white;
+  width: 100vw;
+  margin: 0px auto;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.navbar {
+  height: 2.5em;
+  background-color: black;
+  display: flex;
+  position: relative;
+}
+
+.navbar div {
+  display: flex;
+  flex: 1;
+  border: 1px solid red;
+  height: 100%;
+}
+
+.navbar div:first-child {
+  flex: 3;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+}
+
+.navbar a:hover {
+  background-color: grey;
+}
+
+.navbar a:first-child span {
+  color: #24baa0;
+}
+
+.navbar-on-hover1 {
+  display: none;
+  position: absolute;
+  top: 3.3em;
+  right: 36em;
+  flex-direction: column;
+  width: 10%;
+  height: 3em;
+  z-index: 100;
+}
+
+.navbar-on-hover1 a {
+  display: flex;
+  flex: 1;
+  color: #fff;
+  width: 100%;
+  text-decoration: none;
+  border: 1px solid yellow;
+  background-color: black;
+}
+
+.navbar-on-hover1 a:hover {
+  background-color: greenyellow;
+}
+
+.navbar-on-hover1:after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-bottom-color: #000000;
+  border-width: 14px;
+  margin-left: -14px;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

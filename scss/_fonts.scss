@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'ralewayblack';
+    src: url('.fonts/raleway-black.woff2') format('woff2'),
+         url('.fonts/raleway-black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ralewayblack_italic';
+    src: url('fonts/raleway-blackitalic.woff2') format('woff2'),
+         url('fonts/raleway-blackitalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('fonts/raleway-bold.woff2') format('woff2'),
+         url('fonts/raleway-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

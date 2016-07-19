@@ -1,0 +1,90 @@
+$grid-columns: 12;
+
+.grid-container {
+	.row {
+		width: 100%;
+		margin-bottom: 10px; //wstawic zmienna pozniej
+		min-height: 50px;
+		overflow: hidden;
+		position: relative;
+		
+		&.nested-row {
+			padding-bottom: 5px;
+		}
+		&:after {
+    		content: "";
+    		clear: both;
+    		display: block;
+		}
+	}
+	[class*="col-"] {
+		box-sizing: border-box;
+		float: left;
+		width: 100%;
+		min-height: 50px;
+		//border: 1px solid black;
+	}
+	
+	.col-xs-12 {width: 100%;}
+	.col-xs-11 {width: 91.66666667%;}
+	.col-xs-10 {width: 83.33333333%;}
+	.col-xs-9 {width: 75%;}
+	.col-xs-8 {width: 66.66666667%;}
+	.col-xs-7 {width: 58.33333333%;}
+	.col-xs-6 {width: 50%;}
+	.col-xs-5 {width: 41.66666667%;}
+	.col-xs-4 {width: 33.33333333%;}
+	.col-xs-3 {width: 25%;}
+	.col-xs-2 {width: 16.66666667%;}
+	.col-xs-1 {width: 8.33333333%;}
+
+	
+@media only screen and (min-width: 640px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+	
+@media screen and (orientation: landscape),
+	   screen and (min-width: 800px) {
+	
+		//ręczne robienie szerokosci kolumn
+	.col-1 {width: 1 * (100% / $grid-columns);}
+	.col-2 {width: 2 * (100% / $grid-columns);}
+	.col-3 {width: 3 * (100% / $grid-columns);}
+	.col-4 {width: 4 * (100% / $grid-columns);}
+	.col-5 {width: 5 * (100% / $grid-columns);}
+	.col-6 {width: 6 * (100% / $grid-columns);}
+	.col-7 {width: 7 * (100% / $grid-columns);}
+	.col-8 {width: 8 * (100% / $grid-columns);}
+	.col-9 {width: 9 * (100% / $grid-columns);}
+	.col-10 {width: 10 * (100% / $grid-columns);}
+	.col-11 {width: 11 * (100% / $grid-columns);}
+	.col-12 {width: 12 * (100% / $grid-columns);}
+		   
+		   .programs { 
+			   height: 100vh;
+		   
+		   }
+}
+}
+
+
+//*pętla for dla zrobienia kolumn
+
+//@for $i from 1 through $grid-columns {
+//	.col-#{$i} {
+//		width: $i * 100% / $grid-columns;
+//	}
+//} 

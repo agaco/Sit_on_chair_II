@@ -1,0 +1,35 @@
+@mixin littleCircle ($size, $color) {
+	border-radius: 50%; 
+	-webkit-border-radius: 50%; 
+	-moz-border-radius: 50%;
+	width: $size;
+	height: $size;
+	background-color: $color;
+}
+
+@mixin triangle ($position) {
+    
+}
+
+
+@mixin button ($width, $height) {
+	background-color: black;
+	color: $main-color-green;
+	width: $width;
+	height: $height;
+}
+@mixin ahref () {
+	text-decoration: none;
+	text-align: right;
+	color: $sec-font-color;
+	&:visited {
+		background-color: $main-color-blue;
+		color: $sec-font-color;
+	}
+	&:hover {
+		//background-color: $sec-color-blue;
+		color: $sec-font-color;
+		transform: scale(1.1, 1.1);
+					transition: 0.7s;
+	}
+}

@@ -1,0 +1,33 @@
+{
+  "name": "aga",
+  "version": "1.0.0",
+  "description": "v2 - made with sass",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "jshint": "^2.9.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "jshint": "^2.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agaco/Sit_on_chair_II.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agaco/Sit_on_chair_II/issues"
+  },
+  "homepage": "https://github.com/agaco/Sit_on_chair_II#readme"
+}
