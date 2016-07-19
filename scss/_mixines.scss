@@ -7,16 +7,19 @@
 	background-color: $color;
 }
 
-@mixin triangle ($position) {
-    
-}
-
 
 @mixin button ($width, $height) {
-	background-color: black;
-	color: $main-color-green;
+	background-color: $main-color-green;
+	color: $font-color-white;
 	width: $width;
 	height: $height;
+    border: none;
+    text-decoration: none;
+    font-size: 1.4em;
+    border-radius: 10px;
+    outline: none;
+    cursor:pointer; 
+
 }
 @mixin ahref () {
 	text-decoration: none;

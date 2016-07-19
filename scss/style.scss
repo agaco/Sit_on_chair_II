@@ -1,6 +1,6 @@
 /*pierwszy komentarz css*/
 @import "mixines";
-@import "fonts";
+//@import "fonts";
 //@import "grid";
 @import "variables";
 @import "media";
@@ -22,6 +22,8 @@ body, html {
 .container {
     width: 1000px;
     margin: 0px auto;
+    border: 1px solid green;
+    height: 100%;
 }
 .navbar {
     height: 2.5em;
@@ -90,3 +92,38 @@ body, html {
 //div.history-btn:hover .navbar-on-hover1 {
 //    display: flex;
 //}
+
+#section-1-slider {
+    background: linear-gradient(to bottom, rgba(250,250,250,1) 0%, rgba(246,246,246,1) 47%, rgba(209,208,216,1) 100%);/* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#d1d0d8', GradientType=0 );/* IE6-9 */
+    height: 505px;
+    color: $font-color-black;
+}
+
+.section-1-chair-img {
+    float: left;
+    width: 40%;
+    height: 100%;
+    border: 1px solid black;
+    display: inline-block; 
+    img {
+        margin: 0px auto;
+        border: 1px solid red;
+    }
+}
+.section-1-text {
+    float: right;
+    width: 60%;
+    height: 100%;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    h1 {
+        span {
+            color: $main-color-green;
+        }   
+    }
+}
+.section-1-button-1 {
+    @include button (270px, 50px);
+}

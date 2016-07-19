@@ -1,25 +1,4 @@
 /*pierwszy komentarz css*/
-@font-face {
-  font-family: 'ralewayblack';
-  src: url(".fonts/raleway-black.woff2") format("woff2"), url(".fonts/raleway-black.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ralewayblack_italic';
-  src: url("fonts/raleway-blackitalic.woff2") format("woff2"), url("fonts/raleway-blackitalic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ralewaybold';
-  src: url("fonts/raleway-bold.woff2") format("woff2"), url("fonts/raleway-bold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -37,6 +16,8 @@ body, html {
 .container {
   width: 1000px;
   margin: 0px auto;
+  border: 1px solid green;
+  height: 100%;
 }
 
 .navbar {
@@ -109,6 +90,54 @@ body, html {
   border-bottom-color: #000000;
   border-width: 14px;
   margin-left: -14px;
+}
+
+#section-1-slider {
+  background: linear-gradient(to bottom, #fafafa 0%, #f6f6f6 47%, #d1d0d8 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#d1d0d8', GradientType=0 );
+  /* IE6-9 */
+  height: 505px;
+  color: #000;
+}
+
+.section-1-chair-img {
+  float: left;
+  width: 40%;
+  height: 100%;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.section-1-chair-img img {
+  margin: 0px auto;
+  border: 1px solid red;
+}
+
+.section-1-text {
+  float: right;
+  width: 60%;
+  height: 100%;
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+}
+
+.section-1-text h1 span {
+  color: #24baa0;
+}
+
+.section-1-button-1 {
+  background-color: #24baa0;
+  color: #fff;
+  width: 270px;
+  height: 50px;
+  border: none;
+  text-decoration: none;
+  font-size: 1.4em;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
