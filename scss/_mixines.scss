@@ -1,10 +1,14 @@
-@mixin littleCircle ($size, $color) {
+@mixin circle ($size) {
 	border-radius: 50%; 
 	-webkit-border-radius: 50%; 
 	-moz-border-radius: 50%;
 	width: $size;
 	height: $size;
-	background-color: $color;
+	background-color: $color-light-grey;
+    border: 2px solid $color-dark-grey;
+    position: absolute;
+    top: -32px;
+    left: 40%;
 }
 
 
@@ -35,4 +39,13 @@
 		transform: scale(1.1, 1.1);
 					transition: 0.7s;
 	}
+}
+@mixin greenline ($top) {
+    background-color: $main-color-green;
+    height: 6px;
+    width: 160px;
+    position: absolute;
+    top:$top;
+    
+    
 }

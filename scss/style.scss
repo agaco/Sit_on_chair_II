@@ -24,25 +24,39 @@ body, html {
     margin: 0px auto;
     border: 1px solid green;
     height: 100%;
+    }
+span {
+    color: $main-color-green;
+}
+h2 {
+    color: $color-dark-grey;
+}
+#section-nav {
+    height: 3em;
+    background-color: black;
 }
 ul.navbar {
 	list-style-type: none;
 	background-color: black;
-	height: 3em;
 	display: flex;
-	padding: 0;
-	line-height: 3em;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 	li {
 		display: inline-block;
-		border: 1px solid violet;
+		//border: 1px solid violet;
 		height: 100%;
 		flex: 1;
-		
+        a, p {
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+        }
 		&:first-child {
 			flex:3;
 		}
 		&:hover ul.dropdown {
-			display: block;
+			display: flex;
 		}
 		ul.dropdown {
 			display: none;
@@ -50,13 +64,15 @@ ul.navbar {
 			list-style-type: none;
 			line-height: 2.5em;
 			height: 2.5em;
+            width: 166.66666666px;
+            padding: 0px;
+            margin: 0px;
 			position:absolute; 
 			z-index:1;
 			li {
 				display: block;
 				background-color: black;
 				float: none;
-				padding: 0;
 				height: 100%;
 				align-content: center;
 			}
@@ -67,9 +83,7 @@ ul.navbar {
 		width: 100%;
 		text-decoration: none;
 		color: white;
-		display: block;
-		padding: 0 8px;
-		text-align: center;
+		display: flex; 
 		&:hover {
 			background-color: darkgreen;
 		}
@@ -81,34 +95,132 @@ ul.navbar {
 #section-1-slider {
     background: linear-gradient(to bottom, rgba(250,250,250,1) 0%, rgba(246,246,246,1) 47%, rgba(209,208,216,1) 100%);/* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#d1d0d8', GradientType=0 );/* IE6-9 */
-    height: 505px;
+    height: 400px;
     color: $font-color-black;
 }
 
 .section-1-chair-img {
     float: left;
-    width: 40%;
+    width: 100%;
     height: 100%;
     border: 1px solid black;
-    display: inline-block; 
+    &:after {
+        content: ">";
+        color: $main-color-green;
+        font-size: 6em;
+        position: absolute;
+        top: 30%;
+        right: 15%;
+    }
+    &:before {
+        content: "<";
+        color: $main-color-green;
+        font-size: 6em;
+        position: absolute;
+        top: 30%;
+        left: 15%;
+    }
+    
     img {
-        margin: 0px auto;
+        padding-top: 5%;
         border: 1px solid red;
+        vertical-align: middle;
+        display: inline-block;
+        width: 47%;
+        float: left;
+    }
+    article {
+        padding-top: 7%;
+        padding-right: 9%;
+        display: inline-block;
+        width: 53%;
+        line-height: 1.5em;
+        text-align: center;
+        h1 {
+            font-size: 2.3em;   
+        } 
+        .section-1-button-1 {
+            @include button (250px, 50px);
+        }
     }
 }
-.section-1-text {
-    float: right;
-    width: 60%;
-    height: 100%;
-    border: 1px solid black;
-    display: inline-block;
-    text-align: center;
-    h1 {
-        span {
-            color: $main-color-green;
-        }   
+#section-2-photos {
+    height: 325px;
+    .section-2-photo-div{
+        display: inline-block;
+        position: relative;
+        float: left;
+        height: 100%;
+        width: 33.3333%;
+        padding: 1.5em;
+        border: 1px solid pink;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        p {
+            color: black;
+        }
+        h3 {
+            font-weight: 600;
+            color: black;
+         }
+        .green-line2 {
+            @include greenline (18%);
+        }
+        .line {
+            //background-color: rgba($font-color-white, 0.41);
+            background-color: rgba($font-color-white, 0.42);
+            position: absolute;
+            bottom: 38%;
+            width: 87.5%;
+            height: 15%;
+            z-index: 100;
+            p {
+                font-weight: 600;
+                padding-left: 1em;
+            }
+            .green-line {
+                @include greenline (60%);
+            }
+        }
+        
     }
 }
-.section-1-button-1 {
-    @include button (270px, 50px);
+#section-3-pricing {
+    background-color: $color-grey;
+    height: 700px;
+    position: relative;
+    .section-3-greenline {
+        @include greenline (6%);
+    }
+}
+.section-3-pricing-box {
+    width: 33.33333%;
+    height: 80%;
+    border: 1px solid grey;
+    background-color: $color-light-grey;
+    margin-top: 5em;position: relative;
+    p {
+        color: $main-color-green;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.85em;
+        margin-top: 2.8em;
+    }
+    .section-3-circle {
+        @include circle(58px);
+        &:after {
+            border-radius: 50%; 
+            -webkit-border-radius: 50%; 
+            -moz-border-radius: 50%;
+            width: 23px;
+            height: 23px;
+            background-color: $color-dark-grey;
+            border: 2px solid $color-dark-grey;
+            top: 0px;
+            left: 40%; 
+        }
+    }
+    
 }
