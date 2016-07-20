@@ -7,8 +7,34 @@
 	background-color: $color-light-grey;
     border: 2px solid $color-dark-grey;
     position: absolute;
-    top: -32px;
+    top: -35px;
     left: 40%;
+}
+@mixin circleInside () {
+	border-radius: 50%;
+	-webkit-border-radius: 50%; 
+    -moz-border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    background-color: $color-dark-grey;
+    border: none;
+	position: absolute;
+    top: -19px;
+	left: 44.5%;
+}
+@mixin pricing () {
+	border-radius: 50%;
+	-webkit-border-radius: 50%; 
+    -moz-border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: $font-color-white;
+    border: 2px solid $color-dark-grey;
+	margin: 0 auto;
+	
+//	position: absolute;
+//    top: -19px;
+//	left: 44.5%;
 }
 
 
@@ -20,7 +46,7 @@
     border: none;
     text-decoration: none;
     font-size: 1.4em;
-    border-radius: 10px;
+    border-radius: 8px;
     outline: none;
     cursor:pointer; 
 
