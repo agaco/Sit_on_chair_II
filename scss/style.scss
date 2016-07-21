@@ -29,7 +29,7 @@ span {
     color: $main-color-green;
 }
 h2 {
-    color: $color-dark-grey;
+    color: $color-very-dark-grey;
 }
 #section-nav {
     height: 3em;
@@ -194,16 +194,41 @@ ul.navbar {
     position: relative;
     .section-3-greenline {
         @include greenline (6%);
+        width: 310px;
     }
+}
+.section-3-pricing-box-container {
+    height: 80%;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
 }
 .section-3-pricing-box {
 	display: inline-block;
     width: 31%;
-    height: 80%;
+    height: 100%;
     border: 2px solid $color-dark-grey;
     background-color: $color-light-grey;
     margin-top: 5em;
 	position: relative;
+    &:hover {
+        border-color: $main-color-green;
+        background-color: $main-color-green;
+        p {
+            color: $font-color-white;
+        }
+        .section-3-circle {
+            background-color: $main-color-green;
+            border-color: $main-color-green;
+        }
+	   .section-3-circle-inside {
+		  background-color: $font-color-white;
+        }
+        .section-3-btn {
+            background-color: $font-color-white;
+            color: $main-color-green;
+	   }  
+    }
     p {
         color: $main-color-green;
         text-align: center;
@@ -219,6 +244,24 @@ ul.navbar {
     }
 	.section-3-pricing-circle {
 		@include pricing ();
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        p.price {
+            color: $color-dark-grey;
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
+            sup {
+                font-size: 0.5em;
+            }
+        }
+        p {
+            color: $color-dark-grey;
+            margin: 0;
+            padding: 0;
+            font-size: 1.3em;
+        }
 	}
 	.section-3-table {
 		margin-top: 2em;
@@ -226,11 +269,11 @@ ul.navbar {
 		background-color: #e4e4e4;
 		width: 100%;
 		height: 30%;
-		color: $color-dark-grey;
+		color: $color-very-dark-grey;
 		padding: 0.3em 0;	
 		font-weight: 400;
 		margin: 0;
-			&:nth-child(2) {
+			&:nth-of-type(2n) {
 				background-color: $color-grey;
 			}
 		}
@@ -242,10 +285,48 @@ ul.navbar {
 		left: 30%;
 	}    
 }
-#middle {
-	margin: 0 2.2em;
-	
+#section-4-form {
+    height: 520px;
+    position: relative;
+    .section-4-greenline {
+      @include greenline (8%); 
+        width: 300px;
+    }
 }
-#float-right {
-	float:right;
+.section-4-formup {
+    width: 60%;
+    height: auto;
+    border: 1px solid yellow;
+    display: inline-block;
+    float: left;
+    //line-height: 2em;
+    input {
+        outline-style: none;
+        border: 1px solid #a3e2d7;
+        width: 100%;
+        height: 2.6em;
+        margin-top: 1.2em;
+        font-size: 2em;
+        font-family: 'Raleway', sans-serif;
+        padding-left: 0.5em;
+        
+    }
+    textarea {
+        border: 1px solid #a3e2d7;
+        font-size: 2em;
+        width: 100%;
+        height: 5.5em;
+        margin-top: 1.2em;
+        font-family: 'Raleway', sans-serif;
+        padding-left: 0.5em;
+    }
+}
+.section-4-chair {
+    width: 40%;
+    height: auto;
+    background-color: coral;
+    display: inline-block;
+    float: right;
+    display: flex;
+    
 }
