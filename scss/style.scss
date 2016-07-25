@@ -308,8 +308,7 @@ ul.navbar {
         margin-top: 1.2em;
         font-size: 2em;
         font-family: 'Raleway', sans-serif;
-        padding-left: 0.5em;
-        
+        padding-left: 0.5em; 
     }
     textarea {
         border: 1px solid #a3e2d7;
@@ -324,9 +323,40 @@ ul.navbar {
 .section-4-chair {
     width: 40%;
     height: auto;
-    background-color: coral;
     display: inline-block;
     float: right;
     display: flex;
-    
+    flex-direction: column;
+    color: black;
+    padding: 0 3.5em;
+    img {
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
+    button {
+        @include button (100%, 50px);
+        align-self: center;
+    }
+    input[type="checkbox"] {
+        opacity: 0.1;
+        float: left;
+        display: inline-block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+    input[type="checkbox"] + label{
+        margin: 1em;
+        clear: none;
+        padding: 10px 0 4px 24px;
+        cursor: pointer;
+       //background-color: aqua;
+    }
+    input[type="checkbox"]:checked + label{
+            background-image: url("../images/form_ok.jpg");
+            background-position: left;
+            background-repeat: no-repeat;
+    }
 }
+    
