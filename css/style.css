@@ -453,22 +453,25 @@ ul.navbar a:hover {
 }
 
 .section-4-chair input[type="checkbox"] {
-  opacity: 0.1;
-  float: left;
+  display: none;
+}
+
+.section-4-chair label {
+  font-size: 1.4em;
+}
+
+.section-4-chair input[type="checkbox"] + label:before {
+  content: "";
   display: inline-block;
-  position: absolute;
   width: 50px;
   height: 50px;
+  vertical-align: top;
+  background-color: white;
+  border: 1px solid #24baa0;
 }
 
-.section-4-chair input[type="checkbox"] + label {
-  margin: 1em;
-  clear: none;
-  padding: 10px 0 4px 24px;
-  cursor: pointer;
-}
-
-.section-4-chair input[type="checkbox"]:checked + label {
+.section-4-chair input[type="checkbox"]:checked + label:before {
+  color: white;
   background-image: url("../images/form_ok.jpg");
   background-position: left;
   background-repeat: no-repeat;
