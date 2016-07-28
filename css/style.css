@@ -16,7 +16,6 @@ body, html {
 .container {
   width: 1000px;
   margin: 0px auto;
-  border: 1px solid green;
   height: 100%;
 }
 
@@ -108,7 +107,6 @@ ul.navbar a:hover {
   float: left;
   width: 100%;
   height: 100%;
-  border: 1px solid black;
   position: relative;
 }
 
@@ -132,7 +130,6 @@ ul.navbar a:hover {
 
 .section-1-chair-img img {
   padding-top: 5%;
-  border: 1px solid red;
   vertical-align: middle;
   display: inline-block;
   width: 47%;
@@ -176,7 +173,6 @@ ul.navbar a:hover {
   height: 100%;
   width: 33.3333%;
   padding: 1.5em;
-  border: 1px solid pink;
 }
 
 #section-2-photos .section-2-photo-div img {
@@ -395,7 +391,6 @@ ul.navbar a:hover {
 .section-4-formup {
   width: 60%;
   height: auto;
-  border: 1px solid yellow;
   display: inline-block;
   float: left;
 }
@@ -457,24 +452,49 @@ ul.navbar a:hover {
 }
 
 .section-4-chair label {
-  font-size: 1.4em;
+  font-size: 1.3em;
+  text-align-last: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .section-4-chair input[type="checkbox"] + label:before {
   content: "";
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   vertical-align: top;
   background-color: white;
   border: 1px solid #24baa0;
+  margin: 0 0.5em 0 0;
 }
 
 .section-4-chair input[type="checkbox"]:checked + label:before {
   color: white;
   background-image: url("../images/form_ok.jpg");
+  background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
+}
+
+#section-5-footer {
+  height: 4em;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  flex: 1;
+  font-size: 1.3em;
+  height: 100%;
+  color: #575757;
+}
+
+footer p {
+  display: flex;
+  text-align: left;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
